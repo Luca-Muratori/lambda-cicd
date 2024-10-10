@@ -17,8 +17,8 @@ jobs:
           python-version: '3.12'
       - name: Install dependecies
         run: |
-          python -m pip instatll --upgrade pip
-          pip install -r lamda/requirements.txt -t lambda/
+          python -m pip instal --upgrade pip
+          pip install -r lambda/requirements.txt -t lambda/
       - name: Configure aws creds
         uses: aws-actions/configure-aws-credentials@v1
         with: 
@@ -29,4 +29,4 @@ jobs:
         run: |
           cd lambda
           zip -r lambda.zip .
-          aws lambda update-function-code --function-name TEST-CICD --zip-file file://lambda.zip
+          aws lambda update-function-code --function-name TEST-CICD --zip-file fileb://lambda.zip
