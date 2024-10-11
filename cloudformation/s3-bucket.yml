@@ -21,7 +21,7 @@ Resources:
         - Key: Environment
           Value: Github actions
   
-  Outputs:
-    BucketName:
-      Description: 'name of created s3 bucket'
-      Value: !Ref MyS3Bucket
+Outputs:
+  BucketName:
+    Description: 'name of created s3 bucket'
+    Value: !Ref MyS3Bucket
