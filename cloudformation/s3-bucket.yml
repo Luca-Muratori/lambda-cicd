@@ -3,7 +3,7 @@ Description: 's3 bucket for our cicd pr'
 
 Parameters:
   Environment:
-    type: String
+    Type: String
     Default: test
     AllowedValues:
       - test
